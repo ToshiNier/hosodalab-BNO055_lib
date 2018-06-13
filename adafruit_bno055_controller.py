@@ -39,3 +39,20 @@ class AdafruitBno055Controller:
 
     def gravity(self):
         return self.bno.read_gravity()
+    
+    def linear_acceleration(self):
+        return self.bno.read_linear_acceleration()
+    
+    def quaternion(self):
+        return self.bno.read_quaternion()
+    
+    def accelerometer(self):
+        return self.bno.read_linear_acceleration()
+    
+    def euler(self):
+        return self.bno.read_euler()
+
+    
+    
+
+
