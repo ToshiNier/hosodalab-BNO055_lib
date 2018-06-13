@@ -18,12 +18,13 @@ def bno055_pub():
     rospy.init_node('bno055_pub', anonymous=True)
     pub = rospy.Publisher('bno055_state', Float32MultiArray)
     rate = rospy.Rate(10) # 10hz
+    msglist = [0,0,0]
+    bno_controller = AdafruitBno055Controller()
     while not rospy.is_shutdown():
-        bno_controller  =  = AdafruitBno055Controller()
         x,y,z = bno_controller.gravity()
-        gravity_str = "gravity is = %f, %f, %f" %x,%y,%z
+        gravity_str = "gravity is{}".format([x,y,z])
         rospy.loginfo(gravity_str)
-        pub.publish([x,y,z])
+        pub.publish(3,[x,y,z])
         rate.sleep()
 
 if __name__ == '__main__':
