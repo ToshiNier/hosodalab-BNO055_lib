@@ -19,6 +19,7 @@ def bno055_pub():
     pub = rospy.Publisher('bno055_state', Float32MultiArray)
     rate = rospy.Rate(10) # 10hz
     while not rospy.is_shutdown():
+        bno_controller  =  = AdafruitBno055Controller()
         x,y,z = bno_controller.gravity()
         gravity_str = "gravity is = %f, %f, %f" %x,%y,%z
         rospy.loginfo(gravity_str)
