@@ -37,5 +37,5 @@ class AdafruitBno055Controller:
 
         print('Reading BNO055 data, press Ctrl-C to quit...')
 
-    def gravity():
+    def gravity(self):
         return bno.read_gravity()
