@@ -8,7 +8,7 @@ class AdafruitBno055Controller:
     """this is a comment about kotani's first lib ww"""
 
     def __init__(self, rst=18):
-        bno = BNO055.BNO055(rst)
+        self.bno = BNO055.BNO055(rst)
 
         # Enable verbose debug logging if -v is passed as a parameter.
         if len(sys.argv) == 2 and sys.argv[1].lower() == '-v':
