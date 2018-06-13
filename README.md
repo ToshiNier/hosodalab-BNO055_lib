@@ -2,7 +2,7 @@
 
 ====
 
-* This is BNO055 Library (python2).
+* This is BNO055 Library for lab (python2).
 * Sample codes for ROS are also inside.
 
 ## Description
