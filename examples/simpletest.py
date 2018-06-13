@@ -24,7 +24,6 @@
 import logging
 import sys
 import time
-
 from Adafruit_BNO055 import BNO055
 
 
