@@ -17,10 +17,5 @@
 ## Install
 git clone https://github.com/ToshiNier/hosodalab-BNO055_lib.git
 
-## Licence
-
-[MIT](https://github.com/tcnksm/tool/blob/master/LICENCE)
-
 ## Author
-
 [Toshi2B](https://github.com/ToshiNier)
